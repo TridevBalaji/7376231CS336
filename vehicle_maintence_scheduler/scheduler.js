@@ -41,7 +41,6 @@ function knapsack(vehicles, capacity) {
         }
     }
 
-    // Backtrack to find selected items
     let w = capacity
     for (let i = n; i > 0; i--) {
         if (dp[i][w] !== dp[i - 1][w]) {
